@@ -1,0 +1,12 @@
+.button {
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+
+  &.round {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+
+    width: 2rem;
+  }
+}

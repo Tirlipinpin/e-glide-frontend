@@ -1,0 +1,25 @@
+.category {
+  max-height: 10rem;
+  overflow-y: auto;
+
+  margin-top: .4rem;
+  padding-bottom: 1.5rem;
+
+  .filter {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    height: 1.6rem;
+
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-width: 0;
+
+    .checkbox {
+      flex-shrink: 0;
+    }
+  }
+}

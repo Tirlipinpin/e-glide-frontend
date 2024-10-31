@@ -1,0 +1,22 @@
+.searchInput {
+  border-radius: 16px;
+  background-color: #f3f3f3;
+
+  border: none;
+
+  &.small {
+    padding: .2rem;
+  }
+
+  &.medium {
+    padding: 0.4rem;
+  }
+
+  &.large {
+    padding: 0.7rem;
+  }
+
+  &::placeholder {
+    opacity: .5;
+  }
+}

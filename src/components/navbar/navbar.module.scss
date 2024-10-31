@@ -1,0 +1,62 @@
+.navbar {
+  transition: flex-basis 150ms ease-in-out;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 4rem;
+
+  margin-bottom: 1rem;
+
+  .logo {
+    font-size: 36px;
+
+    flex-shrink: 0;
+
+    margin-inline-end: 3rem;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .modules {
+    margin-top: 4px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: stretch;
+
+    flex-grow: 1;
+
+    gap: 3rem;
+
+    .module {
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
+
+      transition: opacity 150ms ease-in-out, background-color 150ms ease-in-out;
+
+      font-weight: 600;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  .queue {
+    margin-inline-start: 3rem;
+    display: flex;
+
+    gap: .8rem;
+
+    .userButton {
+      background-color: black;
+      color: white;
+    }
+  }
+}

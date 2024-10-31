@@ -1,0 +1,57 @@
+.card {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 4px;
+
+  position: relative;
+
+  transition: box-shadow 150ms ease-in-out;
+
+  .loadingImage, .cover {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  .loadingTitle {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .loadingFooter {
+    padding: 0.5rem;
+  }
+
+  .title, .footer {
+    padding: 0.5rem;
+  }
+
+  .price {
+    position: absolute;
+    top: 0;
+    right: 0px;
+
+    background-color: rgb(96, 93, 93);
+    color: white;
+
+    backdrop-filter: blur(8px);
+
+    padding: .2rem;
+
+    border-bottom-left-radius: 4px;
+
+    transition: padding-top 150ms ease-in-out;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    .price {
+      padding-top: 1rem;
+    }
+  }
+}
